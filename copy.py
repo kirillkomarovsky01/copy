@@ -1,0 +1,10 @@
+filename = input("Введите название папки, которую хотите скопировать :")
+filename2 = input("Куда скопировать второй файл? :")
+f = open(filename,'r')
+fcopy = open(filename2, 'w')
+a = f.read()
+fcopy.write(a)
+f.close()
+fcopy.close()
+
+print('Копирование успешно завершено! ')
